@@ -1,0 +1,35 @@
+{
+    "name": "mepihindeveloper/php-query-param",
+    "description": "Component for working with URI",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "component",
+        "class",
+        "php",
+        "query",
+        "params",
+        "query string"
+    ],
+    "authors": [
+        {
+            "name": "mepihindeveloper",
+            "email": "mepihindeveloper@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "mepihindeveloper\\components\\query\\param\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "codeception/codeception": "^4.1",
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0"
+    }
+}
