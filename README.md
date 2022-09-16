@@ -49,7 +49,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 $param = (new ParamBuilder(Param::class))->setName('a')->setValue('1')->build();
 
 echo $param->getName(); // Выведет имя параметра 'a'
-var_dump($param->getValue()); // Выведет значение '1' параметра 'a'
+print_r($param->getValue()); // Выведет значение '1' параметра 'a'
 ```
 
 
