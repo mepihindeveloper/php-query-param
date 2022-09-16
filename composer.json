@@ -1,6 +1,6 @@
 {
     "name": "mepihindeveloper/php-query-param",
-    "description": "Component for working with URI",
+    "description": "Component for working with query string params",
     "type": "library",
     "license": "MIT",
     "keywords": [
