@@ -5,6 +5,7 @@ declare(strict_types = 1);
 namespace mepihindeveloper\components\query\param;
 
 use mepihindeveloper\components\query\param\exceptions\ParamDataException;
+use mepihindeveloper\components\query\param\interfaces\ParamInterface;
 
 /**
  * Класс ParamBuilder
@@ -56,10 +57,10 @@ class ParamBuilder extends ParamAbstract {
     /**
      * Формирует объект параметра
      *
-     * @return Param Возвращает сформированный объект параметра
+     * @return ParamInterface Возвращает сформированный объект параметра
      * @throws ParamDataException
      */
-    public function build(): Param {
+    public function build(): ParamInterface {
         if ($this->name === null) {
             throw new ParamDataException('Ошибка формирование параметра: не указан ключ (название)');
         }
